@@ -13,7 +13,7 @@ internal class Program
 		{
 			if (persianDate == targetYear)
 				break;
-			Console.WriteLine($"year {persianDate.Year} monthe {persianDate.Month}  {persianDate.GetLongDayOfWeekName}  day {persianDate.Day} ");
+			Console.WriteLine($"year {persianDate.Year} monthe {persianDate.Month}  day {persianDate.Day} ");
 			persianDate = persianDate.AddDays(1);
 		}
 
