@@ -1,45 +1,53 @@
-﻿Console.Write("inter a number : ");
-var a = Convert.ToInt32(Console.ReadLine());
-var b = 1;
-if (IsEven(a))
+﻿internal class Program
 {
-    while (b != a)
+    private static void Main(string[] args)
     {
-        for (int i = 1; i <= a; i++)
+        Console.Write("inter a number : ");
+        var a = Convert.ToInt32(Console.ReadLine());
+        var b = 1;
+        if (IsEven(a))
         {
-            if (IsPrime(i) && IsPrime(b) && !IsEven(i) && !IsEven(b))
+            while (b != a)
             {
-                if ((b + i) % a == 0)
+                for (int i = 1; i <= a; i++)
                 {
-                    Console.WriteLine($"{i} + {b} = {a} ");
+                    if (IsPrime(i) && IsPrime(b) && !IsEven(i) && !IsEven(b))
+                    {
+                        if ((b + i) % a == 0)
+                        {
+                            Console.WriteLine($"{i} + {b} = {a} ");
+                        }
+                    }
+
+                    if (i == b) break;
+                }
+
+                b++;
+            }
+        }
+    }
+
+    public static bool IsEven(int a)
+    {
+        return a % 2 == 0;
+    }
+
+    public static bool IsPrime(int a)
+    {
+        if (a == 0 || a == 1)
+        {
+            return false;
+        }
+        else
+        {
+            for (int i = 2; i <= i / 2; i++)
+            {
+                if (a % i == 0)
+                {
+                    return false;
                 }
             }
-            if (i == b) break;
+            return true;
         }
-        b++;
-    }
-}
-
-static bool IsEven(int a)
-{
-    return (a % 2 == 0);
-}
-
-bool IsPrime(int a)
-{
-    if (a == 0 || a == 1)
-    {
-        return false;
-    }
-    else
-    {
-        for (int i = 2; i <= i / 2; i++)
-        {
-            if (a % i == 0)
-            {
-                return false;
-            }
-        }
-        return true;
     }
 }
