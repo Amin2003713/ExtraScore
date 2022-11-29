@@ -4,19 +4,21 @@
 	{
 		Console.Write("inter x : ");
 		var x = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine($"the result is => {GetResult(x)}");
+		Console.Write("inter the number of n : ");
+		var n = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine($"the result is => {GetResult(x, n)}");
 		Console.ReadKey();
 
 	}
 
-	public static double GetResult(int x)
+	public static double GetResult(int x, int n)
 	{
 		double result = 0;
-		for (int i = 1; i <= 5; i++)
+		for (int i = 1; i <= n; i++)
 		{
-			result += ((double)Pow(x, i) / (double)GetDivider(i));
+			if (IsEven(i)) result -= ((double)Pow(x, i) / (double)GetDivider(i));
+			if (IsOdd(i)) result += ((double)Pow(x, i) / (double)GetDivider(i));
 		}
-
 		return result;
 	}
 
@@ -31,7 +33,7 @@
 		int result = 1;
 		if (i % 2 == 0)
 		{
-			for (int j = 1; j < i; j++)
+			for (int j = 1; j <= i; j++)
 			{
 				if (j % 2 == 0 && IsEven(j)) result *= j;
 			}
@@ -39,7 +41,7 @@
 
 		if (i % 2 != 0)
 		{
-			for (int j = 1; j < i; j++)
+			for (int j = 1; j <= i; j++)
 			{
 				if (j % 2 != 0 && IsOdd(j)) result *= j;
 			}
