@@ -7,8 +7,6 @@ class Program
 		var n = Convert.ToInt64(Console.ReadLine());
 		double fac = GetResult(n);
 		Console.WriteLine($"the result is => {fac}");
-		Console.ReadKey();
-
 	}
 
 	public static double GetResult(long l)
@@ -16,7 +14,8 @@ class Program
 		double result = 0;
 		for (int i = 1; i <= l; i++)
 		{
-			result += (i / (GetFactorial(i)));
+			var a = (GetFactorial(i) != 0) ? GetFactorial(i) : 1;
+			result += ((double)i / (double)a);
 		}
 		return result;
 	}
