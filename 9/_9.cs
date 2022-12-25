@@ -1,12 +1,12 @@
-﻿class Program
+﻿class _9
 {
 	public static void Main(string[] args)
 	{
 		Console.Write("inter a chareckter : ");
-		var ch = Convert.ToChar(Console.ReadLine());
-		var digit = IsDigit(ch);
-		var Upp = IsUpperChar(ch);
-		var low = IsLowerChar(ch);
+		char ch = Convert.ToChar(Console.ReadLine());
+		bool digit = IsDigit(ch);
+		bool Upp = IsUpperChar(ch);
+		bool low = IsLowerChar(ch);
 		Console.WriteLine($"is {ch} a digit ? {digit}\nis {ch} a upperchar ? {Upp}\nIs {ch} a lowerChar ? {low}");
 		Console.ReadKey();
 

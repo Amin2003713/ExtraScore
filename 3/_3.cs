@@ -1,9 +1,9 @@
-﻿class Program
+﻿class _3
 {
     public static void Main(string[] args)
     {
         Console.Write("inter a nimber to check if its a traianglur number or not : ");
-        var a = Convert.ToInt32(Console.ReadLine());
+        int a = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine(IsTrain(a));
         Console.ReadKey();
 

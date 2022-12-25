@@ -1,10 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
-class Program
+class _11
 {
 	public static void Main(string[] args)
 	{
 		Console.Write("inter a number : ");
-		var n = Convert.ToInt64(Console.ReadLine());
+		long n = Convert.ToInt64(Console.ReadLine());
 		double fac = GetResult(n);
 		Console.WriteLine($"the result is => {fac}");
 	}
@@ -14,7 +14,7 @@ class Program
 		double result = 0;
 		for (int i = 1; i <= l; i++)
 		{
-			var a = (GetFactorial(i) != 0) ? GetFactorial(i) : 1;
+			long a = (GetFactorial(i) != 0) ? GetFactorial(i) : 1;
 			result += ((double)i / (double)a);
 		}
 		return result;

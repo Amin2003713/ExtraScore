@@ -1,4 +1,4 @@
-﻿class Program
+﻿class _4
 {
     public static void Main(string[] args)
     {

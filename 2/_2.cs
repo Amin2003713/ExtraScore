@@ -1,10 +1,10 @@
-﻿internal class Program
+﻿internal class _2
 {
     private static void Main(string[] args)
     {
         Console.Write("inter a number : ");
-        var a = Convert.ToInt32(Console.ReadLine());
-        var b = 1;
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = 1;
         if (IsEven(a))
         {
             while (b != a)

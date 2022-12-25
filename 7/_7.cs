@@ -1,9 +1,9 @@
-﻿class Program
+﻿class _7
 {
 	public static void Main(string[] args)
 	{
 		Console.Write("Inter a number : ");
-		var num = (Console.ReadLine());
+		string num = (Console.ReadLine());
 		GetResult(num);
 		Console.ReadKey();
 

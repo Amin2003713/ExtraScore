@@ -1,9 +1,9 @@
-﻿internal class Program
+﻿internal class _10
 {
 	private static void Main(string[] args)
 	{
 		Console.Write("inter a number : ");
-		var n = Convert.ToInt64(Console.ReadLine());
+		long n = Convert.ToInt64(Console.ReadLine());
 		long fac = GetResult(n);
 		Console.WriteLine($"the result is => {fac}");
 		Console.ReadKey();

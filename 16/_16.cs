@@ -1,15 +1,15 @@
 ﻿namespace _16
 {
-	internal class Program
+	internal class _16
 	{
 		static void Main(string[] args)
 		{
 			Console.Write("inter a :");
-			var a = Convert.ToInt32(Console.ReadLine());
+			int a = Convert.ToInt32(Console.ReadLine());
 			Console.Write("inter b :");
-			var b = Convert.ToInt32(Console.ReadLine());
+			int b = Convert.ToInt32(Console.ReadLine());
 			Console.Write("inter c :");
-			var c = Convert.ToInt32(Console.ReadLine());
+			int c = Convert.ToInt32(Console.ReadLine());
 			if (IsTriangle(a, b, c))
 			{
 				if (IsSagh(a, b, c))
@@ -29,7 +29,7 @@
 
 		private static bool Is90De(int a, int b, int c)
 		{
-			var bigger = 0;
+			int bigger = 0;
 			if (a > b && a > c)
 			{
 				bigger = a;

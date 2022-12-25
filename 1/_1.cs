@@ -1,13 +1,13 @@
 ﻿using MD.PersianDateTime;
-internal class Program
+internal class _1 //اینا ننویسید از رو من
 {
 	private static void Main(string[] args)
 	{
 		//سال را به فرمت میلادی وارد کنید و تقویم ان سال میلادی را به حجری دریافت کنید 
 		Console.Write("Inter the first day of the year : ");
-		var date = Convert.ToDateTime(Console.ReadLine());
-		var persianDate = new PersianDateTime(date);
-		var targetYear = persianDate.AddYears(1);
+		DateTime date = Convert.ToDateTime(Console.ReadLine());
+		PersianDateTime persianDate = new PersianDateTime(date);
+		DateTime targetYear = persianDate.AddYears(1);
 
 		while (true)
 		{

@@ -1,24 +1,22 @@
-﻿class Program
+﻿class _13
 {
 	public static void Main(string[] args)
 	{
 		Console.Write("inter x : ");
-		var x = Convert.ToInt32(Console.ReadLine());
-		Console.Write("inter the number of n : ");
-		var n = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine($"the result is => {GetResult(x, n)}");
+		int x = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine($"the result is => {GetResult(x)}");
 		Console.ReadKey();
 
 	}
 
-	public static double GetResult(int x, int n)
+	public static double GetResult(int x)
 	{
 		double result = 0;
-		for (int i = 1; i <= n; i++)
+		for (int i = 1; i <= 5; i++)
 		{
-			if (IsEven(i)) result -= ((double)Pow(x, i) / (double)GetDivider(i));
-			if (IsOdd(i)) result += ((double)Pow(x, i) / (double)GetDivider(i));
+			result += ((double)Pow(x, i) / (double)GetDivider(i));
 		}
+
 		return result;
 	}
 
@@ -33,7 +31,7 @@
 		int result = 1;
 		if (i % 2 == 0)
 		{
-			for (int j = 1; j <= i; j++)
+			for (int j = 1; j < i; j++)
 			{
 				if (j % 2 == 0 && IsEven(j)) result *= j;
 			}
@@ -41,7 +39,7 @@
 
 		if (i % 2 != 0)
 		{
-			for (int j = 1; j <= i; j++)
+			for (int j = 1; j < i; j++)
 			{
 				if (j % 2 != 0 && IsOdd(j)) result *= j;
 			}

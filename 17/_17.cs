@@ -1,6 +1,6 @@
 ﻿namespace _17
 {
-	internal class Program
+	internal class _17
 	{
 		static void Main(string[] args)
 		{
@@ -21,7 +21,7 @@
 		private static string GetBase(int a, int b)
 		{
 			if (b > a) return a.ToString();
-			var c = Math.DivRem(a, b).Remainder;
+			int c = Math.DivRem(a, b).Remainder;
 			return GetBase(Math.DivRem(a, b).Quotient, b) + c.ToString();
 		}
 	}

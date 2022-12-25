@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-class Program
+class _12
 {
 	public static void Main(string[] args)
 	{
 		Console.Write("inter a number for factor : ");
-		var n = Convert.ToInt64(Console.ReadLine());
+		long n = Convert.ToInt64(Console.ReadLine());
 		Console.Write("inter a number for pow : ");
-		var x = Convert.ToInt32(Console.ReadLine());
+		int x = Convert.ToInt32(Console.ReadLine());
 		double fac = GetResult(n, x);
 		Console.WriteLine($"the result is => {fac}");
 		Console.ReadKey();

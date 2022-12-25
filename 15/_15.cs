@@ -1,11 +1,11 @@
-﻿internal class Program
+﻿internal class _15
 {
 	private static void Main(string[] args)
 	{
 		Console.Write("Inter x for Log x : ");
-		var x = Convert.ToInt32(Console.ReadLine());
+		int x = Convert.ToInt32(Console.ReadLine());
 		Console.Write("Inter base for Log x : ");
-		var k = Convert.ToInt32(Console.ReadLine());
+		int k = Convert.ToInt32(Console.ReadLine());
 		Console.WriteLine();
 		Console.WriteLine($"the result of LOG {x} is => {GetLog(x, k)}");
 		Console.WriteLine($"                 {k}");

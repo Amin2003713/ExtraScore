@@ -1,6 +1,6 @@
 ﻿namespace _19
 {
-	internal class Program
+	internal class _19
 	{
 		static void Main(string[] args)
 		{

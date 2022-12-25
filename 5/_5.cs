@@ -1,9 +1,9 @@
-﻿class Program
+﻿class _5
 {
     public static void Main(string[] args)
     {
         Console.Write("inter your salary for taxing cal : ");
-        var salary = Convert.ToInt32(Console.ReadLine());
+        int salary = Convert.ToInt32(Console.ReadLine());
         CalTaxing(salary);
         Console.ReadKey();
 
